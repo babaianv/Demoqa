@@ -42,7 +42,7 @@ public class PracticeFormPage extends BasePage{
     WebElement other;
 
     public PracticeFormPage selectGender(String gender) {
-        
+
         if (gender.equals("Male")){
             click(male);
         } else if (gender.equals("Female")) {
@@ -153,4 +153,3 @@ public class PracticeFormPage extends BasePage{
         return this;
     }
 }
-

@@ -10,7 +10,7 @@ public class BrowserWindowsTest extends TestBase{
 
     @BeforeMethod
     public void precondition(){
-        new HomePage(driver).confirmCookie().getAlertsFrameWindows();
+        new HomePage(driver).getAlertsFrameWindows();
         new SidePanel(driver).selectBrowserWindows();
     }
 
@@ -20,4 +20,3 @@ public class BrowserWindowsTest extends TestBase{
         new BrowserWindowsPage(driver).switchToNextTab(1).verifyNewTabText("This is a sample page");
     }
 }
-

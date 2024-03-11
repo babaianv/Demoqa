@@ -10,7 +10,7 @@ public class AlertsTests extends TestBase{
 
     @BeforeMethod
     public void precondition(){
-        new HomePage(driver).confirmCookie().getAlertsFrameWindows();
+        new HomePage(driver).getAlertsFrameWindows();
         new SidePanel(driver).selectAlerts();
     }
 
@@ -34,4 +34,3 @@ public class AlertsTests extends TestBase{
     }
 
 }
-

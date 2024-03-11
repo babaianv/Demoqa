@@ -34,5 +34,9 @@ public abstract class BasePage {
         js.executeScript("document.querySelector('footer').style.display='none';");
 
     }
-}
 
+    public void clickWithJS(WebElement element, int x,int y) {
+        js.executeScript("window.scrollBy("+ x + "," + y + ")");
+        click(element);
+    }
+}

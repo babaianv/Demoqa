@@ -41,4 +41,3 @@ public class BrowserWindowsPage extends BasePage{
                 .until(ExpectedConditions.textToBePresentInElement(element,text));
     }
 }
-

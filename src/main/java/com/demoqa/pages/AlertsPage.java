@@ -15,8 +15,8 @@ public class AlertsPage extends BasePage{
         super(driver);
     }
 
-@FindBy(id = "timerAlertButton")
-WebElement timerAlertButton;
+    @FindBy(id = "timerAlertButton")
+    WebElement timerAlertButton;
     public AlertsPage clickByAlertWithTimer() {
         click(timerAlertButton);
         new WebDriverWait(driver,
@@ -66,4 +66,3 @@ WebElement timerAlertButton;
         return this;
     }
 }
-
